@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+h2, h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+th{
+  background-color: rgba(255,255,255,0.3);
+ }
+table{
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  word-wrap: break-word;
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+/* demo styles */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  text-align: center;
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+  font-color: white;
+}
+section{
+  margin: 50px;
+}
+
+
+/* follow me template */
+form {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-family: arial;
+  color: #fff;
+  background-color: rgba(255,255,255,0.3);
+  border-top: solid 1px rgba(255,255,255,0.1);
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  margin-bottom: 2em;
+
+  input {
+  	color: black;
+  }
+}
+.notice {
+  margin: 0px;
+  text-align: center;
+  font-style: normal;
+  background-color: #F50057;
+  font-size: 14px;
+  position: relative;
+}
+
+div {
+	a {
+	  color: white;
+	  text-decoration: none;
+	  text-align: center;
+	}
+	a:visited {
+	  color: white;
+	}
+}

@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Accounts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Level</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @accounts.each do |account| %>
+      <tr>
+        <td><%= User.find(account.user).email %></td>
+        <td><%= account.level %></td>
+        <% if account.level == 'Applicant' %>
+          <td><%= link_to 'Approve', edit_account_path(account) %></td>
+        <% end %>
+        <% if account.level != 'Boss' %>
+          <td><%= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
